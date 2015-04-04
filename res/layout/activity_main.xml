@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ctv="http://schemas.android.com/apk/res/org.lynxz.customviews"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.lynxz.demos.MainActivity" >
+
+    <org.lynxz.custom.CustomTextView
+        android:id="@+id/customTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="这是一个可以实现了跑马灯效果的TextView,使用的是自定义属性,还设置了字体,可以看到他一直在动在动在动..."
+        android:textSize="20sp"
+        ctv:ctv_assert_font_path="fonts/STKAITI.TTF"
+        ctv:ctv_marquen="true" />
+
+    <org.lynxz.custom.CustomTextView
+        android:id="@+id/customTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/customTextView1"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:text="这是使用xml属性来实现跑马灯效果,可以看到他一直在动在动在动..." />
+
+</RelativeLayout>

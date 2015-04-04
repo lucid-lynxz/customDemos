@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CustomTextView">
+
+        <!-- 字体文件在assert中的路径,如"font/XX.TTF" -->
+        <attr name="ctv_assert_font_path" format="string" />
+
+        <!-- 是否开启跑马灯效果 -->
+        <attr name="ctv_marquen" format="boolean" />
+    </declare-styleable>
+
+</resources>
